@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页连连看游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>网页连连看游戏</h1>
+            <div class="game-info">
+                <div class="score">得分: <span id="score">0</span></div>
+                <div class="time">时间: <span id="time">300</span>秒</div>
+                <button id="restart-btn">重新开始</button>
+            </div>
+        </header>
+        
+        <div class="game-container">
+            <div class="game-board" id="game-board">
+                <!-- 游戏棋盘将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <div class="level-selector">
+                <label for="level">难度级别:</label>
+                <select id="level">
+                    <option value="easy">简单 (6x6)</option>
+                    <option value="medium" selected>中等 (8x8)</option>
+                    <option value="hard">困难 (10x10)</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="game-message" id="message"></div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
